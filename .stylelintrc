@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "color-no-invalid-hex": true,
+		"font-family-no-duplicate-names": true,
+		"declaration-block-no-duplicate-properties": true,
+		"block-no-empty": true,
+		"comment-no-empty": true,
+		"no-duplicate-selectors": true,
+		"no-extra-semicolons": true,
+		"color-hex-case" true,
+		"at-rule-semicolon-space-before": "never",
+		"at-rule-name-space-after": "always"
+  }
+}
