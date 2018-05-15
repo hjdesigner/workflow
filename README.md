@@ -10,6 +10,8 @@
  - Eslint
  - Stylelint
  - PostCSS
+ - Mocha
+ - Chai
 
 ## Dependencies:
  - Node.js >= 9
