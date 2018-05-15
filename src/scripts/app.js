@@ -1,4 +1,6 @@
+import Title from './components/title/title';
 import '../sass/main.scss';
 
-const title = document.querySelector('[data-js="title"]');
-title.innerHTML = 'Hello Webpack 4 8D';
+const titleElement = document.querySelector('[data-js="title"]');
+
+Title('Henrique Melanda', titleElement);
