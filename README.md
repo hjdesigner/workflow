@@ -5,7 +5,7 @@
  - Webpack 4+
  - Babel
  - Webpack Dev Server
- - Webpack Dashbord
+ - Webpack Dashboard
  - HTML and CSS generated automatically by webpack
  - SASS
  - Eslint
