@@ -5,12 +5,13 @@
  - Webpack 4+
  - Babel
  - Webpack Dev Server
+ - Webpack Dashbord
  - HTML and CSS generated automatically by webpack
  - SASS
  - Eslint
  - Stylelint
  - PostCSS
- - Mocha
+ - Jest
  - Chai
 
 ## Dependencies:
@@ -25,6 +26,8 @@
 
 ## Scripts 
  - yarn dev: Starts the application on development mode
+ - yarn test: Run tests once
+ - yarn test:watch: Run tests in watch mode
  - yarn build: Build project to production
 
 ## Lincese

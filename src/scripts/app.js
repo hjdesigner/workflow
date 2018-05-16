@@ -1,6 +1,5 @@
-import Title from './components/title/title';
-import '../sass/main.scss';
+import Card from './components/card';
 
-const titleElement = document.querySelector('[data-js="title"]');
+const cardElement = document.querySelector('[data-js="card"]');
 
-Title('Henrique Melanda', titleElement);
+Card('Henrique Melanda', cardElement);

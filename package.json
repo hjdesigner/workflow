@@ -6,14 +6,20 @@
   "license": "MIT",
   "scripts": {
     "lint": "./node_modules/.bin/eslint --fix src/**/*.js",
-    "dev": "webpack-dashboard -- webpack-dev-server --mode development",
+    "dev": "webpack-dashboard -- webpack-dev-server --mode development ",
     "build": "webpack --mode production",
-		"test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:watch": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
+    "test": "./node_modules/.bin/jest --env=jsdom",
+    "test:watch": "./node_modules/.bin/jest --env=jsdom --watch"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^.+\\.(css|scss|jpg|png|svg)$": "<rootDir>/config/CSSStub.js"
+    }
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "babel-core": "^6.26.3",
+    "babel-jest": "^22.4.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
@@ -26,14 +32,17 @@
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.11.0",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.2.0",
+    "jest": "^22.4.3",
     "jsdom": "^11.10.0",
     "jsdom-global": "^3.0.2",
     "mini-css-extract-plugin": "^0.4.0",
-    "mocha": "^5.1.1",
     "node-fetch": "^2.1.2",
     "node-sass": "^4.9.0",
     "postcss-loader": "^2.1.5",
+    "regenerator-runtime": "^0.11.1",
     "sass-loader": "^7.0.1",
     "sinon": "^5.0.7",
     "sinon-chai": "^3.0.0",
